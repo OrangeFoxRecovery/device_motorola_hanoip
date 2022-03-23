@@ -71,9 +71,14 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     fastbootd \
     android.hardware.fastboot@1.0-impl-mock \
-    android.hardware.fastboot@1.0-impl-mock.recovery   
-    
-# Additional Libraries
+    android.hardware.fastboot@1.0-impl-mock.recovery
+
+# QCOM Decryption
+PRODUCT_PACKAGES += \
+    qcom_decrypt \
+    qcom_decrypt_fbe
+
+# Additional Libraries17 
 TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
     libandroidicu \
