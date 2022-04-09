@@ -26,7 +26,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 # Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
-LOCAL_PATH := device/xiaomi/
+LOCAL_PATH := device/xiaomi/hanoip
+
+# Dynamic Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # API
 PRODUCT_SHIPPING_API_LEVEL := 30
